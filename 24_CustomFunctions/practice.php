@@ -4,8 +4,8 @@
 	define("TITLE", "Custom Functions");
 	
 	// Custom Variables
-	$myName	= "Brad Hussey";
-	$lessonNum	= 24;
+	$name	= 'Lomi';
+	$lesson_num	= 24;
 
 ?>
 
@@ -21,7 +21,7 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Tutorial <?php echo $lessonNum; ?>: <small><?php echo TITLE; ?></small></h1>
+			<h1>Tutorial <?php echo $lesson_num; ?>: <small><?php echo TITLE; ?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
@@ -30,7 +30,11 @@
 				
 				<?php
 					
-					// your code here
+					function show(){
+						echo 'Yeah this is my first PHP function';
+					}
+
+					show();
 					
 				?>
 				
@@ -40,7 +44,7 @@
 			
 			<hr>
 			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
+			<small>&copy;<?php echo date('Y'); ?> - <?php echo $name; ?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">

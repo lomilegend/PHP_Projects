@@ -1,9 +1,21 @@
 <?php
 	
 	// Constants
+	define('TITLE','IF Statements');
 
 	
 	// Custom Variables
+
+	$name = 'Lomi';
+	$lession_num = 10;
+
+	$a = 15;
+	$b = 17.5;
+
+
+
+
+	
 
 
 ?>
@@ -11,7 +23,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP <!-- TITLE --></title>
+		<title>PHP <?php echo TITLE  ?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -20,12 +32,20 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Tutorial <!-- LESSON NUMBER -->: <small><!-- TITLE --></small></h1>
+			<h1>Tutorial <?php echo $lession_num  ?>: <small><?php echo TITLE  ?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
+
+			<?php 	
+			if($b > $a) {
+				echo 
+				"Yep! $b is certainly greater than $a.";
+				}  
+				
+			?>
 				
 			</div><!-- end sandbox -->
 			
@@ -33,7 +53,7 @@
 			
 			<hr>
 			
-			<small>&copy;<!-- YEAR --> - <!-- NAME --></small>
+			<small>&copy;<?php echo date('Y');  ?> - <?php echo $name;?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">

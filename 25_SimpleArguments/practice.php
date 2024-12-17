@@ -4,8 +4,9 @@
 	define("TITLE", "Simple Arguments");
 	
 	// Custom Variables
-	$myName	= "Brad Hussey";
-	$lessonNum	= 25;
+	$name	= 'Lomi';
+	$lesson_num	= 25;
+	$names =array('Accra','Takoradi','Tarkwa','Keta','Sogakope');
 
 ?>
 
@@ -21,7 +22,7 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Tutorial <?php echo $lessonNum; ?>: <small><?php echo TITLE; ?></small></h1>
+			<h1>Tutorial <?php echo $lesson_num; ?>: <small><?php echo TITLE; ?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
@@ -30,7 +31,14 @@
 				
 				<h3>One Argument</h3>
 				<?php
-					
+				function one($n){
+					echo "$n is nice town";
+				}
+					foreach($names as $i){
+						one($i);
+						echo "<br>";
+
+					}
 					// your code here
 					
 				?>
@@ -38,7 +46,14 @@
 				<h3>Two Arguments</h3>
 				<?php
 				
-					// your code here
+					function add_up($a, $b){
+						$result = $a + $b;
+
+						//return $result;
+
+						echo "The answer is $result";
+					}
+					add_up(5,54);
 				
 				?>
 				
@@ -48,7 +63,7 @@
 			
 			<hr>
 			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
+			<small>&copy;<?php echo date('Y'); ?> - <?php echo $name; ?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">

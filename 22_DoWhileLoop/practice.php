@@ -4,8 +4,9 @@
 	define("TITLE", "Do While Loop");
 	
 	// Custom Variables
-	$myName	= "Brad Hussey";
-	$lessonNum	= 22;
+	$name	= 'Lomi';
+	$lesson_num	= 22;
+	
 	
 ?>
 
@@ -21,7 +22,7 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Tutorial <?php echo $lessonNum; ?>: <small><?php echo TITLE; ?></small></h1>
+			<h1>Tutorial <?php echo $lesson_num; ?>: <small><?php echo TITLE; ?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
@@ -29,8 +30,12 @@
 			<div class="sandbox">
 				
 				<?php
-				 
-				    // your code here
+				 $j = 1;
+				 do{
+					echo "Number is $j <br>";
+					$j++;
+				 }
+				while($j <=15);
 				 
 				?>
 				
@@ -40,7 +45,7 @@
 			
 			<hr>
 			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
+			<small>&copy;<?php echo date('Y'); ?> - <?php echo $name; ?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">

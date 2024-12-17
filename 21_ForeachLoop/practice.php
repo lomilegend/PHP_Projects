@@ -4,8 +4,9 @@
 	define("TITLE", "Foreach Loop");
 	
 	// Custom Variables
-	$myName	= "Brad Hussey";
-	$lessonNum	= 21;
+	$name	= 'Lomi';
+	$lesson_num	= 21;
+	$moustaches = array('Handlebar','Salvador Dali','Fu Manchu');
 
 ?>
 
@@ -21,7 +22,7 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Tutorial <?php echo $lessonNum; ?>: <small><?php echo TITLE; ?></small></h1>
+			<h1>Tutorial <?php echo $lesson_num; ?>: <small><?php echo TITLE; ?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
@@ -30,7 +31,9 @@
 				
 				<?php
 				 
-				    // your code here
+				    foreach($moustaches as $moustache){
+						echo "I love the $moustache <br>";
+					}
 				 
 				?>
 				
@@ -40,7 +43,7 @@
 			
 			<hr>
 			
-			<small>&copy;<?php echo date('Y'); ?> - <?php echo $myName; ?></small>
+			<small>&copy;<?php echo date('Y'); ?> - <?php echo $name; ?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">
