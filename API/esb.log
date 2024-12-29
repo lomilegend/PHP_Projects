@@ -1,0 +1,12 @@
+2024-06-05 05:34:08 - Handling request for OrderService
+2024-06-05 05:34:11 - Response: 
+2024-06-05 05:34:11 - Consumed message: Array
+(
+    [type] => Order
+    [data] => Array
+        (
+            [orderId] => 12345
+        )
+
+)
+
